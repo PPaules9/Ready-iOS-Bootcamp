@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Chart line.svg",
+      "filename" : "Currency.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Chart line 1.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Chart line 2.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }
