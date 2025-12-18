@@ -177,6 +177,9 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See all" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uo4-Az-bMm">
                                                         <rect key="frame" x="0.0" y="0.0" width="140.33333333333334" height="21"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                                        </accessibility>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                         <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -377,10 +380,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R15-O8-p5A" userLabel="Bottom View">
                                 <rect key="frame" x="0.0" y="570.33333333333337" width="393" height="141"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="epO-St-R7i">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="epO-St-R7i">
                                         <rect key="frame" x="56" y="0.0" width="281" height="21"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Coins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfQ-A7-IMh">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfQ-A7-IMh">
                                                 <rect key="frame" x="0.0" y="0.0" width="140.66666666666666" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                 <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
@@ -391,6 +394,9 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See all" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXw-EZ-Ogd">
                                                         <rect key="frame" x="0.0" y="0.0" width="140.33333333333334" height="21"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                                        </accessibility>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                         <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -403,9 +409,77 @@
                                             <constraint firstAttribute="width" constant="281" id="wXm-VS-vQC"/>
                                         </constraints>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tzd-Fo-7Bh">
+                                        <rect key="frame" x="56.666666666666657" y="39" width="280" height="102"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14.050000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="KcY-KK-x6M">
+                                                <rect key="frame" x="13.000000000000007" y="13" width="75" height="75"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stock Trading Investment Feb 2 2022" translatesAutoresizingMaskIntoConstraints="NO" id="oZD-f5-Glb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="75" id="kzB-YD-wlV"/>
+                                                            <constraint firstAttribute="height" constant="75" id="oRX-e1-zeP"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="oZD-f5-Glb" firstAttribute="top" secondItem="KcY-KK-x6M" secondAttribute="top" id="Aoo-Hr-XEH"/>
+                                                    <constraint firstItem="oZD-f5-Glb" firstAttribute="leading" secondItem="KcY-KK-x6M" secondAttribute="leading" id="gcL-wi-XcP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="oZD-f5-Glb" secondAttribute="bottom" id="zWR-UI-M6s"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S5h-00-5Bp">
+                                                <rect key="frame" x="102" y="15" width="160" height="73"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Analysts project 32% upside for Coinbase stock despite... " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiH-UM-5g2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="51"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="51" id="SAc-nr-hQn"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khq-3t-c3D">
+                                                        <rect key="frame" x="0.0" y="51" width="160" height="22"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Finbold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJm-46-KXd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="103.33333333333333" height="22"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=". 47min ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zR6-oZ-4PT">
+                                                                <rect key="frame" x="103.33333333333336" y="0.0" width="56.666666666666671" height="22"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                <color key="textColor" red="0.28627450980000002" green="0.30196078430000001" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1431884766" green="0.1513671875" blue="0.1840820312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="S5h-00-5Bp" secondAttribute="bottom" constant="14" id="LEt-uj-FBf"/>
+                                            <constraint firstAttribute="width" constant="280" id="MUJ-xO-VmE"/>
+                                            <constraint firstItem="S5h-00-5Bp" firstAttribute="top" secondItem="Tzd-Fo-7Bh" secondAttribute="top" constant="15" id="SMb-Oi-SdW"/>
+                                            <constraint firstItem="KcY-KK-x6M" firstAttribute="leading" secondItem="Tzd-Fo-7Bh" secondAttribute="leading" constant="13" id="hB8-vo-9Dq"/>
+                                            <constraint firstItem="S5h-00-5Bp" firstAttribute="leading" secondItem="Tzd-Fo-7Bh" secondAttribute="leading" constant="102" id="i59-9O-cgW"/>
+                                            <constraint firstItem="KcY-KK-x6M" firstAttribute="top" secondItem="Tzd-Fo-7Bh" secondAttribute="top" constant="13" id="t49-gT-5gg"/>
+                                            <constraint firstAttribute="height" constant="102" id="wTH-gh-QGb"/>
+                                            <constraint firstAttribute="trailing" secondItem="S5h-00-5Bp" secondAttribute="trailing" constant="18" id="ytE-rz-AhM"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Tzd-Fo-7Bh" secondAttribute="bottom" id="Gew-bJ-tKf"/>
                                     <constraint firstAttribute="height" constant="141" id="a3W-ed-iW6"/>
+                                    <constraint firstItem="Tzd-Fo-7Bh" firstAttribute="centerX" secondItem="R15-O8-p5A" secondAttribute="centerX" id="jOS-xH-mMd"/>
+                                    <constraint firstItem="epO-St-R7i" firstAttribute="centerX" secondItem="R15-O8-p5A" secondAttribute="centerX" id="vSy-P5-XZu"/>
+                                    <constraint firstItem="epO-St-R7i" firstAttribute="top" secondItem="R15-O8-p5A" secondAttribute="top" id="w4X-zP-et7"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -441,6 +515,7 @@
         <image name="Chart line" width="125" height="68"/>
         <image name="Currency" width="110" height="110"/>
         <image name="Icon" width="14" height="14"/>
+        <image name="Stock Trading Investment Feb 2 2022" width="334" height="334"/>
         <image name="bell" width="16" height="19"/>
         <image name="coolicon" width="6" height="3"/>
         <image name="search" width="16" height="16"/>
